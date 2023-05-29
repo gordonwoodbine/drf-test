@@ -1,0 +1,16 @@
+### list GROUPS
+GET http://{{host}}/api/groups/
+
+### create GROUP
+POST http://{{host}}/api/groups/
+
+{
+  "name": "test group"
+}
+
+### assign PERMISSIONS to GROUP
+PATCH http://{{host}}/api/groups/2/
+
+{
+  "permissions": [1, 2]
+}

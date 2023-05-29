@@ -1,0 +1,19 @@
+GET http://{{host}}/api/users/
+
+### retrieve USER
+GET http://{{host}}/api/users/1
+
+### create USER
+POST http://{{host}}/api/users/
+
+{
+  "username": "mike",
+  "password": "admin"
+}
+
+### assign USER to GROUPS
+PATCH http://{{host}}/api/users/1/
+
+{
+  "groups": [2]
+}
